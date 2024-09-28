@@ -1,9 +1,63 @@
 {% extends "base.html" %}
 
-{% block title %}500 Internal Server Error{% endblock %}
+{% block title %}500 Internal Server Error - Fiona's Portfolio{% endblock %}
 
 {% block content %}
-<h2>500 - Internal Server Error</h2>
-<p>Oops! Something went wrong on our end. Please try again later.</p>
-<a href="{{ url_for('home') }}" class="cta-button">Go to Homepage</a>
+  <!-- ======= 500 Error Section ======= -->
+  <section id="error-500" class="error-500 d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h1>500</h1>
+          <h2>Internal Server Error</h2>
+          <p>Oops! Something went wrong on our end. Please try again later.</p>
+          <a href="{{ url_for('home') }}" class="btn-get-started scrollto">Go to Homepage</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End 500 Error Section -->
+{% endblock %}
+
+{% block extra_css %}
+<style>
+  .error-500 {
+    background: #f6f9ff;
+    min-height: 100vh;
+  }
+  .error-500 h1 {
+    font-size: 160px;
+    font-weight: 700;
+    color: #ffb727;
+    margin-bottom: 0;
+    line-height: 150px;
+  }
+  .error-500 h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #012970;
+    margin-bottom: 30px;
+  }
+  .error-500 p {
+    color: #444444;
+    margin-bottom: 30px;
+  }
+  .error-500 .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #ffb727;
+    color: #fff;
+    background: #ffb727;
+  }
+  .error-500 .btn-get-started:hover {
+    background: #fff;
+    color: #ffb727;
+  }
+</style>
 {% endblock %}

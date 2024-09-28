@@ -1,9 +1,63 @@
 {% extends "base.html" %}
 
-{% block title %}404 Not Found{% endblock %}
+{% block title %}404 Not Found - Fiona's Portfolio{% endblock %}
 
 {% block content %}
-<h2>404 - Page Not Found</h2>
-<p>Sorry, the page you are looking for does not exist.</p>
-<a href="{{ url_for('home') }}" class="cta-button">Go to Homepage</a>
+  <!-- ======= 404 Error Section ======= -->
+  <section id="error-404" class="error-404 d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h1>404</h1>
+          <h2>Page Not Found</h2>
+          <p>Sorry, the page you are looking for does not exist.</p>
+          <a href="{{ url_for('home') }}" class="btn-get-started scrollto">Go to Homepage</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End 404 Error Section -->
+{% endblock %}
+
+{% block extra_css %}
+<style>
+  .error-404 {
+    background: #f6f9ff;
+    min-height: 100vh;
+  }
+  .error-404 h1 {
+    font-size: 160px;
+    font-weight: 700;
+    color: #ffb727;
+    margin-bottom: 0;
+    line-height: 150px;
+  }
+  .error-404 h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #012970;
+    margin-bottom: 30px;
+  }
+  .error-404 p {
+    color: #444444;
+    margin-bottom: 30px;
+  }
+  .error-404 .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #ffb727;
+    color: #fff;
+    background: #ffb727;
+  }
+  .error-404 .btn-get-started:hover {
+    background: #fff;
+    color: #ffb727;
+  }
+</style>
 {% endblock %}

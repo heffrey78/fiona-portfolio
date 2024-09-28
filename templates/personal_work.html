@@ -1,25 +1,125 @@
 {% extends "base.html" %}
 
-{% block title %}Personal Work{% endblock %}
+{% block title %}Personal Work - Fiona's Projects{% endblock %}
 
 {% block content %}
-<h2>Personal Work</h2>
-<p>This section showcases my personal projects and experiments.</p>
-<div class="personal-work-grid">
-    <div class="personal-work-item">
-        <h3>Experiment: Machine Learning Image Classifier</h3>
-        <p>A Python-based image classifier using TensorFlow and Keras.</p>
-        <a href="#" class="project-link">View Project</a>
+  <!-- ======= Personal Work Section ======= -->
+  <section id="personal-work" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Personal Work</span>
+        <h2>Personal Work</h2>
+        <p>This section showcases my personal projects and experiments</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-ml">Machine Learning</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-open-source">Open Source</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+          <div class="portfolio-wrap">
+            <img src="{{ url_for('static', filename='img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Machine Learning Image Classifier</h4>
+              <p>ML Experiment</p>
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='img/portfolio/portfolio-4.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Machine Learning Image Classifier"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{{ url_for('static', filename='img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Weather App</h4>
+              <p>Side Project</p>
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='img/portfolio/portfolio-5.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Weather App"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-open-source">
+          <div class="portfolio-wrap">
+            <img src="{{ url_for('static', filename='img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Library Documentation</h4>
+              <p>Open Source Contribution</p>
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='img/portfolio/portfolio-6.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Library Documentation"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    <div class="personal-work-item">
-        <h3>Side Project: Weather App</h3>
-        <p>A simple weather application built with vanilla JavaScript and the OpenWeatherMap API.</p>
-        <a href="#" class="project-link">View Project</a>
+  </section><!-- End Personal Work Section -->
+
+  <!-- ======= Personal Work Details Section ======= -->
+  <section id="personal-work-details" class="portfolio-details">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/portfolio/portfolio-details-4.jpg') }}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/portfolio/portfolio-details-5.jpg') }}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/portfolio/portfolio-details-6.jpg') }}" alt="">
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Machine Learning</li>
+              <li><strong>Project date</strong>: 01 April, 2023</li>
+              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-description">
+            <h2>Machine Learning Image Classifier</h2>
+            <p>
+              A Python-based image classifier using TensorFlow and Keras. This project demonstrates the application of convolutional neural networks (CNNs) for image classification tasks. The model is trained on a dataset of various objects and can predict the category of new images with high accuracy.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    <div class="personal-work-item">
-        <h3>Open Source Contribution: Library Documentation</h3>
-        <p>Contributed to the documentation of a popular open-source library.</p>
-        <a href="#" class="project-link">View Contribution</a>
-    </div>
-</div>
+  </section><!-- End Personal Work Details Section -->
+
 {% endblock %}
