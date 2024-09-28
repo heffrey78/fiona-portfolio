@@ -55,6 +55,8 @@
     <div class="hero-container">
       <h1>Fiona Wikstrom</h1>
       <h2>I'm an Animator, Backgrond Artist &amp; Writer</h2>
+          <!-- Parallax Container -->
+          <div id="parallax"></div>
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -100,7 +102,27 @@
 
   <!-- Template Main JS File -->
   <script src="{{ url_for('static', filename='js/laura.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script><script>
+    (function () {
+      // Add event listener
+      document.addEventListener("mousemove", parallax);
+      const elem = document.querySelector("#parallax");
+      // Magic happens here
+      function parallax(e) {
+        let _w = window.innerWidth / 2;
+        let _h = window.innerHeight / 2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+        let _depth4 = `${50 - (_mouseX - _w) * 0.08}% ${50 - (_mouseY - _h) * 0.08}%`;
+        let x = `${_depth4}, ${_depth3}, ${_depth2}, ${_depth1}`;
+        elem.style.backgroundPosition = x;
+      }
+    })();
+  </script>
+
 
   {% block extra_js %}{% endblock %}
 
