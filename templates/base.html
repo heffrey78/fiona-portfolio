@@ -6,13 +6,13 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>{% block title %}Fiona Wikstrom{% endblock %}</title>
-  <meta name="description" content="Fiona Wikstrom showcasing web development and software engineering projects">
-  <meta name="keywords" content="web development, software engineering, portfolio, projects">
-  <meta name="author" content="Fiona">
+  <meta name="description" content="Fiona Wikstrom showcasing animation, background art, and writing">
+  <meta name="keywords" content="animation, art, portfolio, projects">
+  <meta name="author" content="Fiona Wikstrom">
 
   <!-- Favicons -->
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-  <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link rel="shortcut icon" href="/static/img/favicon.png">
+  <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
@@ -25,8 +25,8 @@
   <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ url_for('static', filename='css/laura.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <link href="/static/css/laura.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet">
 
   {% block extra_css %}{% endblock %}
 </head>
@@ -42,7 +42,7 @@
         <li><a class="nav-link scrollto" href="{{ url_for('about') }}">About</a></li>
         <li><a class="nav-link scrollto" href="{{ url_for('portfolio') }}">Portfolio</a></li>
         <li><a class="nav-link scrollto" href="{{ url_for('personal_work') }}">Personal Work</a></li>
-        <li><a class="nav-link scrollto" href="{{ url_for('project') }}">Project</a></li>
+        <li><a class="nav-link scrollto" href="{{ url_for('project') }}">Forgotten Lands</a></li>
         <li><a class="nav-link scrollto" href="{{ url_for('contact') }}">Contact</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
@@ -53,10 +53,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <h1>Fiona Wikstrom</h1>
-      <h2>I'm an Animator, Background Artist &amp; Writer</h2>
-          <!-- Parallax Container -->
-          <div id="parallax"></div>
+      <h1>{% block hero_title %}{% endblock %}</h1>
+      <h2>{% block hero_subtitle %}{% endblock %}</h2>
+      <!-- Parallax Container -->
+      <div id="parallax"></div>
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -81,8 +81,8 @@
       <h3>Fiona Wikstrom</h3>
       <p>Animator, Background Artist &amp; Writer</p>
       <div class="social-links">
-        <a href="https://www.instagram.com/fionawikstromart/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/fiona-wikstrom-177672327/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.instagram.com/fionawikstromart/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/fiona-wikstrom-177672327/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
         &copy; 2024 <strong><span>Fiona Wikstrom</span></strong>. All Rights Reserved
@@ -101,8 +101,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{ url_for('static', filename='js/laura.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/main.js') }}"></script><script>
+  <script src="/static/js/laura.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script>
     (function () {
       // Add event listener
       document.addEventListener("mousemove", parallax);
@@ -122,7 +123,6 @@
       }
     })();
   </script>
-
 
   {% block extra_js %}{% endblock %}
 

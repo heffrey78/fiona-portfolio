@@ -2,6 +2,9 @@
 
 {% block title %}Portfolio - Fiona's Projects{% endblock %}
 
+{% block hero_title %}My Portfolio{% endblock %}
+{% block hero_subtitle %}Explore my creative works{% endblock %}
+
 {% block content %}
   <!-- ======= My Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
@@ -17,51 +20,109 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-web">Web</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-data">Data</li>
+            <li data-filter=".filter-animation">Animation</li>
+            <li data-filter=".filter-background">Background Art</li>
+            <li data-filter=".filter-character">Character Design</li>
+            <li data-filter=".filter-perspective">Perspective</li>
+            <li data-filter=".filter-figure">Figure</li>
           </ul>
         </div>
       </div>
 
       <div class="row portfolio-container">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-background">
           <div class="portfolio-wrap">
-            <img src="{{ url_for('static', filename='img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt="">
+            <img src="/static/img/portfolio/airship.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>E-commerce Website</h4>
-              <p>Web</p>
+              <h4>Airship Scene</h4>
+              <p>Background Art</p>
               <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-1.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="E-commerce Website"><i class="bx bx-plus"></i></a>
+                <a href="static/img/portfolio/airship.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Airship Scene"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-background">
           <div class="portfolio-wrap">
-            <img src="{{ url_for('static', filename='img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt="">
+            <img src="static/img/portfolio/cabin.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Mobile App</h4>
-              <p>App</p>
+              <h4>Homestead in the Woods</h4>
+              <p>Background Art</p>
               <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-2.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mobile App"><i class="bx bx-plus"></i></a>
+                <a href="static/img/portfolio/cabin.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Homestead in the Woods"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-data">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-background">
           <div class="portfolio-wrap">
-            <img src="{{ url_for('static', filename='img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
+            <img src="static/img/portfolio/campfire.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Data Visualization Dashboard</h4>
-              <p>Data</p>
+              <h4>Campfire</h4>
+              <p>Background Art</p>
               <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-3.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Data Visualization Dashboard"><i class="bx bx-plus"></i></a>
+                <a href="static/img/portfolio/campfire.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Campfire"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-background">
+          <div class="portfolio-wrap">
+            <img src="static/img/portfolio/target.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>*arget</h4>
+              <p>Background Art</p>
+              <div class="portfolio-links">
+                <a href="static/img/portfolio/target.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="*arget"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-perspective">
+          <div class="portfolio-wrap">
+            <img src="static/img/portfolio/library.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Library</h4>
+              <p>Perspective</p>
+              <div class="portfolio-links">
+                <a href="static/img/portfolio/library.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Library"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-perspective">
+          <div class="portfolio-wrap">
+            <img src="static/img/portfolio/van.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Van</h4>
+              <p>Perspective</p>
+              <div class="portfolio-links">
+                <a href="static/img/portfolio/van.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Van"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-perspective">
+          <div class="portfolio-wrap">
+            <img src="static/img/portfolio/truck.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Truck</h4>
+              <p>Perspective</p>
+              <div class="portfolio-links">
+                <a href="static/img/portfolio/truck.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Truck"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -104,16 +165,16 @@
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: ASU Company</li>
+              <li><strong>Category</strong>: Animation</li>
+              <li><strong>Client</strong>: Personal Project</li>
               <li><strong>Project date</strong>: 01 March, 2023</li>
               <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
             </ul>
           </div>
           <div class="portfolio-description">
-            <h2>This is an example of portfolio detail</h2>
+            <h2>Short Animation: "The Dreamer's Journey"</h2>
             <p>
-              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              This short animation explores the whimsical journey of a young dreamer through a fantastical landscape. Using a mix of 2D and 3D techniques, I created a vibrant world that reflects the protagonist's imagination and growth throughout their adventure.
             </p>
           </div>
         </div>

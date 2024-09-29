@@ -2,6 +2,9 @@
 
 {% block title %}Personal Work - Fiona's Projects{% endblock %}
 
+{% block hero_title %}Personal Work{% endblock %}
+{% block hero_subtitle %}A showcase of my personal projects{% endblock %}
+
 {% block content %}
   <!-- ======= Personal Work Section ======= -->
   <section id="personal-work" class="portfolio">
@@ -17,51 +20,66 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-ml">Machine Learning</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-open-source">Open Source</li>
+            <li data-filter=".filter-animation">Animation</li>
+            <li data-filter=".filter-background">Background Art</li>
+            <li data-filter=".filter-character">Character Design</li>
+            <li data-filter=".filter-writing">Writing</li>
           </ul>
         </div>
       </div>
 
       <div class="row portfolio-container">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-animation">
           <div class="portfolio-wrap">
             <img src="{{ url_for('static', filename='img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Machine Learning Image Classifier</h4>
-              <p>ML Experiment</p>
+              <h4>Short Animated Film</h4>
+              <p>Personal Animation Project</p>
               <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-4.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Machine Learning Image Classifier"><i class="bx bx-plus"></i></a>
+                <a href="{{ url_for('static', filename='img/portfolio/portfolio-4.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Short Animated Film"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-background">
           <div class="portfolio-wrap">
             <img src="{{ url_for('static', filename='img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Weather App</h4>
-              <p>Side Project</p>
+              <h4>Sci-Fi Environment</h4>
+              <p>Background Art Study</p>
               <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-5.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Weather App"><i class="bx bx-plus"></i></a>
+                <a href="{{ url_for('static', filename='img/portfolio/portfolio-5.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sci-Fi Environment"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-open-source">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-character">
           <div class="portfolio-wrap">
             <img src="{{ url_for('static', filename='img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Library Documentation</h4>
-              <p>Open Source Contribution</p>
+              <h4>Character Design Series</h4>
+              <p>Original Character Concepts</p>
               <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-6.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Library Documentation"><i class="bx bx-plus"></i></a>
+                <a href="{{ url_for('static', filename='img/portfolio/portfolio-6.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Character Design Series"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-writing">
+          <div class="portfolio-wrap">
+            <img src="{{ url_for('static', filename='img/portfolio/portfolio-7.jpg') }}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Short Story Collection</h4>
+              <p>Creative Writing</p>
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='img/portfolio/portfolio-7.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Short Story Collection"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -104,15 +122,15 @@
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category</strong>: Machine Learning</li>
+              <li><strong>Category</strong>: Animation</li>
               <li><strong>Project date</strong>: 01 April, 2023</li>
               <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
             </ul>
           </div>
           <div class="portfolio-description">
-            <h2>Machine Learning Image Classifier</h2>
+            <h2>Short Animated Film: "The Dreamcatcher"</h2>
             <p>
-              A Python-based image classifier using TensorFlow and Keras. This project demonstrates the application of convolutional neural networks (CNNs) for image classification tasks. The model is trained on a dataset of various objects and can predict the category of new images with high accuracy.
+              "The Dreamcatcher" is a personal animated short film project that explores the journey of a young girl through a fantastical dreamscape. This project showcases my skills in character animation, background design, and storytelling. The film combines traditional 2D animation techniques with digital painting to create a unique visual style that brings the dream world to life.
             </p>
           </div>
         </div>

@@ -410,7 +410,7 @@ section {
 }
 
 .section-bg {
-  background-color: white;
+  background-color: black;
 }
 
 .section-title {
@@ -463,6 +463,10 @@ section {
 /*--------------------------------------------------------------
 # About Me
 --------------------------------------------------------------*/
+.about {
+  background-color: #b48ead;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -536,7 +540,7 @@ section {
 }
 
 .about .content .count-box a:hover {
-  color: #82909c;
+  color: #82829c;
 }
 
 .about .image {
@@ -545,102 +549,13 @@ section {
   min-height: 500px;
 }
 
-.about .skills-content {
-  margin-top: 30px;
-}
-
-.about .skills-content .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.about .skills-content .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  color: #3b434a;
-}
-
-.about .skills-content .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.about .skills-content .progress-bar-wrap {
-  background: #e6e8eb;
-}
-
-.about .skills-content .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #ffb727;
-}
-
-/*--------------------------------------------------------------
-# My Services
---------------------------------------------------------------*/
-.services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-  border: 1px solid #fff;
-}
-
-.services .icon {
-  margin: 0 auto 20px auto;
-  padding-top: 17px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 72px;
-  height: 72px;
-  background: #fff4df;
-}
-
-.services .icon i {
-  font-size: 36px;
-  line-height: 1;
-  color: #ffb727;
-}
-
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #111;
-  transition: 0.3s;
-}
-
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-.services .icon-box:hover {
-  border-color: #ffb727;
-}
-
-.services .icon-box:hover .title a {
-  color: #ffb727;
-}
-
 /*--------------------------------------------------------------
 # My Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  background-color: #b48ead;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -829,6 +744,10 @@ section {
 /*--------------------------------------------------------------
 # Contact Me
 --------------------------------------------------------------*/
+.contact {
+  background-color: #b48ead;
+}
+
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1102,6 +1021,8 @@ section {
                     url("../img/bigboy-04.png");
   background-repeat: no-repeat;
   background-position: center;
-  /* left: 50%;
-  transform: translateX(-50%); */
+}
+
+.portfolio-details {
+  background-color: #b48ead;
 }
