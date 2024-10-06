@@ -461,10 +461,17 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+.home {
+  background-color: #6c9a8b;
+}
+
+/*--------------------------------------------------------------
 # About Me
 --------------------------------------------------------------*/
 .about {
-  background-color: #b48ead;
+  background-color: #eed2cc;
 }
 
 .about .content h3 {
@@ -544,7 +551,7 @@ section {
 }
 
 .about .image {
-  background: url("../img/fiona.jpg") center center no-repeat;
+  background: url("../img/fiona.png") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -553,7 +560,7 @@ section {
 # My Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-  background-color: #b48ead;
+  background-color: #eed2cc;
 }
 
 .portfolio .portfolio-item {
@@ -695,7 +702,7 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #6C9A8B;
   opacity: 1;
   border: 1px solid #ffb727;
 }
@@ -745,7 +752,7 @@ section {
 # Contact Me
 --------------------------------------------------------------*/
 .contact {
-  background-color: #b48ead;
+  background-color: #eed2cc;
 }
 
 .contact .info-box {
@@ -1014,7 +1021,7 @@ section {
 #parallax {
   position: relative;
   width: 80%;
-  height: 320px;
+  height: 350px;
   background-image: url("../img/bigboy-01.png"),
                     url("../img/bigboy-02.png"),
                     url("../img/bigboy-03.png"),
@@ -1024,5 +1031,5 @@ section {
 }
 
 .portfolio-details {
-  background-color: #b48ead;
+  background-color: #eed2cc;
 }
