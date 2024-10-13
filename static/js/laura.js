@@ -9,6 +9,8 @@
 (function() {
   "use strict";
 
+  console.log("laura.js loaded");
+
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
@@ -26,23 +28,37 @@
    * Mobile nav toggle
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  const navbar = document.querySelector('#navbar');
 
   function mobileNavToogle() {
+    console.log("Mobile nav toggle clicked");
     document.querySelector('body').classList.toggle('mobile-nav-active');
-    if (mobileNavToggleBtn) {
-      mobileNavToggleBtn.classList.toggle('bi-list');
-      mobileNavToggleBtn.classList.toggle('bi-x');
-    }
+    navbar.classList.toggle('navbar-mobile');
+    mobileNavToggleBtn.classList.toggle('bi-list');
+    mobileNavToggleBtn.classList.toggle('bi-x');
+
+    console.log("Body classes:", document.querySelector('body').classList);
+    console.log("Navbar classes:", navbar.classList);
+    console.log("Toggle button classes:", mobileNavToggleBtn.classList);
+
+    // Force a reflow to ensure the menu appears
+    navbar.style.display = 'none';
+    navbar.offsetHeight; // This line triggers a reflow
+    navbar.style.display = '';
   }
+
   if (mobileNavToggleBtn) {
+    console.log("Mobile nav toggle button found");
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+  } else {
+    console.log("Mobile nav toggle button not found");
   }
 
   /**
    * Hide mobile nav on same-page/hash links
    */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
+  document.querySelectorAll('#navbar a').forEach(navLink => {
+    navLink.addEventListener('click', () => {
       if (document.querySelector('.mobile-nav-active')) {
         mobileNavToogle();
       }
@@ -52,12 +68,12 @@
   /**
    * Toggle mobile nav dropdowns
    */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+  document.querySelectorAll('.navbar .dropdown > a').forEach(navmenu => {
     navmenu.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-      e.stopImmediatePropagation();
+      if (navbar.classList.contains('navbar-mobile')) {
+        e.preventDefault();
+        this.nextElementSibling.classList.toggle('dropdown-active');
+      }
     });
   });
 

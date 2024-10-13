@@ -5,8 +5,20 @@
 {% block hero_title %}Fiona Wikstrom{% endblock %}
 {% block hero_subtitle %}I'm an Animator, Background Artist &amp; Writer{% endblock %}
 
+    
 {% block content %}
   <!-- ======= Home Section ======= -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <h1>Fiona Wikstrom</h1>
+        <h2>I'm a Background Artist, Writer, &amp; Animator</h2>
+        <!-- Parallax Container -->
+        <div id="parallax"></div>
+        <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+      </div>
+    </section><!-- End Hero -->
+    
   <section id="home" class="home">
     <div class="container">
 
@@ -22,7 +34,7 @@
           <div class="card mb-4 laura-box-shadow">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="{{ url_for('static', filename='img/portfolio/story1.png') }}" class="img-fluid rounded-start" alt="Animation Process">
+                <img src="{{ url_for('static', filename='img/forgotten-lands/story1.png') }}" class="img-fluid rounded-start" alt="Animation Process">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -52,7 +64,7 @@
           <div class="card mb-4 laura-box-shadow">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="{{ url_for('static', filename='img/portfolio/story2.png') }}" class="img-fluid rounded-start" alt="Writing Process">
+                <img src="{{ url_for('static', filename='img/forgotten-lands/story2.png') }}" class="img-fluid rounded-start" alt="Writing Process">
               </div>
               <div class="col-md-8">
                 <div class="card-body">

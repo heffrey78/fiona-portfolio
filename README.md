@@ -1,73 +1,74 @@
-# Fiona's Portfolio
+# Welcome to Fiona's Digital Playground! 🎨✨
 
-This is a Flask-based portfolio website showcasing Fiona's work and skills as a software developer.
+Hey there! I'm Fiona, and this is where my code meets creativity. Dive in and explore my digital world!
 
-## Features
+## What's Cooking in This Code Kitchen?
 
-- Responsive design using the Laura template
-- Home page with an introduction and featured projects
-- About page with personal information and skills
-- Portfolio page showcasing various projects
-- Personal work page for side projects and experiments
-- Contact form for getting in touch
-- Google App Engine ready for deployment
+- 🌟 A sleek, responsive design that looks great on everything from your phone to your desktop
+- 🏠 A cozy home page where you can get to know me and my star projects
+- 👩‍💻 An 'About Me' page that's basically my digital coffee date with you
+- 💼 A portfolio that's bursting with projects (my digital art gallery, if you will)
+- 🎨 A personal work page where I let my imagination run wild
+- 📬 A contact form for when you want to chat, collaborate, or just say hi!
+- ☁️ Google App Engine ready, because my code likes to live in the cloud
 
-## Requirements
+## Tech Ingredients
 
-- Python 3.9+
-- Flask and other dependencies listed in `requirements.txt`
+- Python 3.9+ (because who doesn't love a good snake in their code?)
+- Flask and other cool dependencies listed in `requirements.txt`
 
-## Installation
+## Setting Up Your Own Digital Playground
 
-1. Clone the repository:
+1. Clone this digital wonderland:
    ```
-   git clone https://github.com/yourusername/fiona-portfolio.git
+   git clone https://github.com/heffrey78/fiona-portfolio.git
    cd fiona-portfolio
    ```
 
-2. Create a virtual environment and activate it:
+2. Create a cozy virtual environment and step inside:
    ```
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
-3. Install the required packages:
+3. Invite all the cool packages to the party:
    ```
    pip install -r requirements.txt
    ```
 
-## Running the Application
+## Bringing the Magic to Life
 
-To run the application locally:
+To run this show locally:
 
 ```
 python app.py
 ```
 
-The application will be available at `http://localhost:5000`.
+Then, head over to `http://localhost:5000` and watch the magic unfold!
 
-## Running Tests
+## Quality Check
 
-To run the test suite:
+To make sure everything's ship-shape:
 
 ```
 python -m unittest discover tests
 ```
 
-## Deployment
+## Taking It to the Cloud
 
-This application is configured for deployment to Google App Engine. To deploy:
+Ready to share with the world? Let's deploy to Google App Engine:
 
-1. Make sure you have the Google Cloud SDK installed and configured.
-2. Run the following command:
+1. Make sure you've got the Google Cloud SDK all set up.
+2. Wave your wand (or just type these commands):
    ```
+   gcloud config set project fiona-site
    gcloud app deploy
    ```
 
-## License
+## The Fine Print
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. (It's like sharing your toys, but for code!)
 
-## Contact
+## Let's Connect!
 
-For any inquiries, please reach out through the contact form on the website or email at fiona@example.com.
+Got questions? Ideas? Just want to chat about the weather? Reach out through the contact form on the website or drop me a line at fionawikstrom@gmail.com. Can't wait to hear from you!

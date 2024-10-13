@@ -133,4 +133,143 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
     console.log("Down arrow not found");
   }
+
+  /**
+   * Portfolio details slider
+   */
+  new Swiper('.portfolio-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+  console.log("Swiper initialized for portfolio-details-slider");
+
+  /**
+   * Porfolio isotope and filter
+   */
+  window.addEventListener('load', () => {
+    let portfolioContainer = select('.portfolio-container');
+    if (portfolioContainer) {
+      let portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: '.portfolio-item'
+      });
+
+      let portfolioFilters = select('#portfolio-flters li', true);
+
+      on('click', '#portfolio-flters li', function(e) {
+        e.preventDefault();
+        portfolioFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        portfolioIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+    }
+  });
+
+  /**
+   * Initiate portfolio lightbox 
+   */
+  const portfolioLightbox = GLightbox({
+    selector: '.portfolio-lightbox'
+  });
+
+  /**
+   * Initiate portfolio details lightbox 
+   */
+  const portfolioDetailsLightbox = GLightbox({
+    selector: '.portfolio-details-lightbox',
+    width: '90%',
+    height: '90vh'
+  });
+
+  /**
+   * Portfolio details slider
+   */
+  new Swiper('.portfolio-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+  /**
+   * Animation on scroll
+   */
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  });
+
+  /**
+   * Video player functionality
+   */
+  const playButtons = select('.play-video', true);
+  const videoModal = select('#videoModal');
+  const videoPlayer = select('#videoPlayer');
+  const closeBtn = select('.close');
+
+  if (playButtons.length > 0 && videoModal && videoPlayer && closeBtn) {
+    console.log("Video player elements found");
+
+    // Open video modal
+    playButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const videoSrc = this.getAttribute('data-video-src');
+        console.log("Opening video modal with source:", videoSrc);
+        videoModal.style.display = 'block';
+        videoPlayer.src = videoSrc;
+        videoPlayer.play().catch(error => console.error("Error playing video:", error));
+      });
+    });
+
+    // Close video modal
+    closeBtn.addEventListener('click', function() {
+      console.log("Closing video modal");
+      videoModal.style.display = 'none';
+      videoPlayer.pause();
+      videoPlayer.currentTime = 0;
+    });
+
+    // Close modal when clicking outside the video
+    window.addEventListener('click', function(event) {
+      if (event.target == videoModal) {
+        console.log("Closing video modal (clicked outside)");
+        videoModal.style.display = 'none';
+        videoPlayer.pause();
+        videoPlayer.currentTime = 0;
+      }
+    });
+  } else {
+    console.log("Some video player elements are missing");
+  }
+
+  // ... (keep all other existing code)
 });

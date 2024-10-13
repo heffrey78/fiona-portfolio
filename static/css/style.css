@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #ffb727;
+  color: #245347;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffb727;
+  background: #1d493d;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -116,7 +116,7 @@ h6 {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -125,16 +125,19 @@ h6 {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 0;
   margin-left: 5px;
 }
 
 .navbar a:hover,
-.navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffb727;
+  color: #1d493d;
+}
+
+.navbar .active {
+  color: #e8998d;
 }
 
 .navbar .dropdown ul {
@@ -159,7 +162,7 @@ h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: none;
   font-weight: 400;
   color: #3b434a;
@@ -173,7 +176,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #ffb727;
+  color: #1d493d;
 }
 
 .navbar .dropdown:hover>ul {
@@ -262,14 +265,14 @@ h6 {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: #3b434a;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #ffb727;
+  color: #1d493d;
 }
 
 .navbar-mobile .getstarted,
@@ -298,13 +301,13 @@ h6 {
 }
 
 .navbar-mobile .dropdown ul a i {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #ffb727;
+  color: #1d493d;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -355,7 +358,7 @@ h6 {
 #hero h2 {
   color: #eee;
   margin-bottom: 50px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -372,7 +375,7 @@ h6 {
 }
 
 #hero .btn-scroll:hover {
-  color: #ffb727;
+  color: #1d493d;
 }
 
 @media (min-width: 1024px) {
@@ -499,7 +502,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #ffb727;
+  color: #1d493d;
   line-height: 0;
 }
 
@@ -514,7 +517,7 @@ section {
 .about .content .count-box i {
   display: block;
   font-size: 36px;
-  color: #ffb727;
+  color: #1d493d;
   float: left;
   line-height: 0;
 }
@@ -532,15 +535,15 @@ section {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #5d6a75;
+  font-size: 16px;
+  color: #5a5766;
 }
 
 .about .content .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #5d6a75;
+  color: #5a5766;
   font-size: 15px;
   font-family: "Satisfy", serif;
   transition: ease-in-out 0.3s;
@@ -578,7 +581,7 @@ section {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
@@ -591,7 +594,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #ffb727;
+  background: #1d493d;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -647,7 +650,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -668,7 +671,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #ffb727;
+  color: #1d493d;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -702,13 +705,13 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #6C9A8B;
+  background-color: #e8998d;
   opacity: 1;
-  border: 1px solid #ffb727;
+  border: 1px solid #1d493d;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffb727;
+  background-color: #1d493d;
 }
 
 .portfolio-details .portfolio-info {
@@ -727,7 +730,7 @@ section {
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .portfolio-details .portfolio-info ul li+li {
@@ -764,7 +767,7 @@ section {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #ffb727;
+  color: #1d493d;
   border-radius: 50%;
   padding: 15px;
   background: #fff6e4;
@@ -780,7 +783,7 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -804,8 +807,8 @@ section {
 
 .contact .social-links a:hover {
   color: #fff;
-  border-color: #ffb727;
-  background: #ffb727;
+  border-color: #1d493d;
+  background: #1d493d;
 }
 
 .contact .php-email-form {
@@ -818,7 +821,7 @@ section {
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .contact .php-email-form .error-message {
@@ -866,12 +869,12 @@ section {
 .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .contact .php-email-form input::focus,
 .contact .php-email-form textarea::focus {
-  background-color: #ffb727;
+  background-color: #1d493d;
 }
 
 .contact .php-email-form input {
@@ -883,7 +886,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffb727;
+  background: #1d493d;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -912,7 +915,7 @@ section {
   background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   padding: 80px 0;
   position: relative;
@@ -943,7 +946,7 @@ section {
 }
 
 #footer p {
-  font-size: 15;
+  font-size: 16;
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
@@ -956,7 +959,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #ffb727;
+  background: #1d493d;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -969,7 +972,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #f3a200;
+  background: #1d493d;
   color: #fff;
   text-decoration: none;
 }
@@ -979,7 +982,7 @@ section {
 }
 
 #footer .credits {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 /* Custom styles */
@@ -1003,7 +1006,7 @@ section {
 
 .cta-button, .project-link {
   display: inline-block;
-  background-color: #ffb727;
+  background-color: #1d493d;
   color: #ffffff;
   padding: 10px 20px;
   text-decoration: none;
@@ -1021,6 +1024,7 @@ section {
 #parallax {
   position: relative;
   width: 80%;
+  max-width: 1920px;
   height: 350px;
   background-image: url("../img/bigboy-01.png"),
                     url("../img/bigboy-02.png"),
@@ -1033,3 +1037,262 @@ section {
 .portfolio-details {
   background-color: #eed2cc;
 }
+
+/* Video Player Styles */
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.video-thumbnail::after {
+  content: '\25B6'; /* Play triangle */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1200px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Video Player */
+#videoPlayer {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9999;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+  }
+
+  .mobile-nav-toggle i {
+    color: #fff;
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active #navbar {
+    right: 0;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle i {
+    color: #1d493d;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    width: 300px;
+    background: rgba(25, 28, 31, 0.95);
+    overflow-y: auto;
+    transition: 0.4s;
+    z-index: 9998;
+    padding-top: 60px;
+  }
+
+  #navbar ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #navbar ul li {
+    position: relative;
+    width: 100%;
+  }
+
+  #navbar ul li a {
+    display: block;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+    outline: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  #navbar ul li a:hover,
+  #navbar ul li a.active {
+    color: #1d493d;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(36, 41, 46, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .navbar-mobile ul {
+    display: block !important;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+
+  .navbar-mobile a,
+  .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #245347
+  }
+
+  .navbar-mobile a:hover,
+  .navbar-mobile .active,
+  .navbar-mobile li:hover > a {
+    color: #245347
+  }
+
+  /* Ensure all menu items are visible */
+  #navbar ul,
+  .navbar-mobile ul {
+    display: block !important;
+  }
+
+  #navbar ul li,
+  .navbar-mobile ul li {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  #navbar ul li a,
+  .navbar-mobile ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #1d493d;
+    text-decoration: none;
+  }
+
+  /* Ensure dropdown menus are visible */
+  #navbar .dropdown ul,
+  .navbar-mobile .dropdown ul {
+    position: static;
+    display: block;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  #navbar .dropdown ul li,
+  .navbar-mobile .dropdown ul li {
+    min-width: 200px;
+  }
+
+  #navbar .dropdown ul a,
+  .navbar-mobile .dropdown ul a {
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  #navbar .dropdown ul a:hover,
+  .navbar-mobile .dropdown ul a:hover,
+  #navbar .dropdown ul .active:hover,
+  .navbar-mobile .dropdown ul .active:hover,
+  #navbar .dropdown ul li:hover > a,
+  .navbar-mobile .dropdown ul li:hover > a {
+    color: #1d493d;
+  }
+
+  #navbar .dropdown > .dropdown-active,
+  .navbar-mobile .dropdown > .dropdown-active {
+    display: block;
+  }
+}
+
+/* ... (keep all existing CSS after this point) ... */
