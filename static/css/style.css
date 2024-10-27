@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bitter", serif;
 }
 
 /*--------------------------------------------------------------
@@ -423,14 +423,14 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
   color: #3b434a;
   position: relative;
   z-index: 2;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .section-title span {
@@ -454,7 +454,7 @@ section {
 
 @media (max-width: 575px) {
   .section-title h2 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 15px;
   }
 
